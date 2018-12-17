@@ -1,6 +1,6 @@
 # MyExpandableLayout
 nothing but shit  
-references：  
+references（抄的这两份代码）：  
 * https://github.com/traex/ExpandableLayout  
 * https://github.com/zagum/Android-ExpandIcon  
 
