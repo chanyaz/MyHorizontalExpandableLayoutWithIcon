@@ -1,0 +1,56 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1dp"
+    android:layout_height="1dp"
+    android:background="@drawable/shape_radius">
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="total:0"
+        app:layout_constraintBottom_toBottomOf="@id/tv_child"/>
+    <TextView android:id="@+id/tv_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="male:0"
+        app:layout_constraintBottom_toBottomOf="@id/tv_child"
+        app:layout_constraintStart_toEndOf="@id/tv_total"/>
+    <TextView
+        android:id="@+id/tv_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="female:0"
+        app:layout_constraintBottom_toBottomOf="@id/tv_teen"
+        app:layout_constraintStart_toEndOf="@id/tv_total"/>
+    <TextView android:id="@+id/tv_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="child:0"
+        app:layout_constraintBottom_toTopOf="@id/tv_teen"
+        app:layout_constraintStart_toEndOf="@id/tv_female"/>
+    <TextView android:id="@+id/tv_teen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="teenager:0"
+        app:layout_constraintBottom_toTopOf="@id/tv_young"
+        app:layout_constraintStart_toEndOf="@id/tv_female"/>
+    <TextView android:id="@+id/tv_young"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="young:0"
+        app:layout_constraintBottom_toTopOf="@id/tv_middle"
+        app:layout_constraintStart_toEndOf="@id/tv_female"/>
+    <TextView android:id="@+id/tv_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="middle:0"
+        app:layout_constraintBottom_toTopOf="@id/tv_old"
+        app:layout_constraintStart_toEndOf="@id/tv_female"/>
+    <TextView android:id="@+id/tv_old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="old:0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_female"/>
+</android.support.constraint.ConstraintLayout>
